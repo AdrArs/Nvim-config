@@ -10,7 +10,7 @@ return {
          options = {
            --theme = "codedark",
            --theme = "sonokai",
-           theme = "catppuccin",
+           --theme = "catppuccin",
            icons_enabled = true,
            globalstatus = true,
            omponent_separators = { left = '', right = ''},
@@ -20,7 +20,7 @@ return {
          sections = {
             lualine_a = {{ "mode", upper = true }},
             lualine_b = {{'branch', icon = ''}, {"diagnostics", sources = {'nvim_lsp'}}},
-            lualine_c = {{ "filename", file_status = true, symbols = {modified = ' ',readonly = ' ', newfile = ' 󰎔',unnamed = '[o ame]' } }},
+            lualine_c = {{ "filename", file_status = true, symbols = {modified = ' ',readonly = ' ', newfile = ' 󰎔',unnamed = '[  ]' } }},
             lualine_x = { {'fileformat', symbols = {unix = ''}}, 'filetype'},
             lualine_y = {'progress'},
             lualine_z = {'location'}

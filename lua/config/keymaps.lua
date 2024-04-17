@@ -22,7 +22,6 @@ map("n", "<leader>t", ":ToggleTerm<CR>")
 
 -- Nvim-tree
 
-map("n", "<C-n>", ":NvimTreeToggle<CR>")
 
 -- go back to previous buffer
 map("n","<C-h>", ":bp<CR>")
@@ -37,6 +36,10 @@ map("n", "'v", ":vsplit<CR>")
 
 -- H split
 map("n", "'h", ":sp<CR>")
+
+-- NERDTree
+map("n", "<C-n>", ":NvimTreeToggle<CR>")
+map("n", "<C-,>", ":NvimTreeFindFile<CR>")
 
 
 -- quit a viewport
