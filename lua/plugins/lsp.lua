@@ -64,6 +64,10 @@ return {
 
       require("lspconfig").jdtls.setup({
          on_attach = on_attach,
+		 cmd = {'jdtls',
+		 "--jvm-arg=" .. string.format("-javaagent:%s", vim.fn.expand "$MASON/share/jdtls/lombok.jar"),
+			--	'-javaagent:$HOME/.local/share/nvim/mason/share/jdtls/lombok.jar'
+			}
       })
 
       require("lspconfig").tsserver.setup({
